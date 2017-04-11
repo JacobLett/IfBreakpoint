@@ -1,8 +1,13 @@
-$(document).ready(function() {
- // executes when HTML-Document is loaded and DOM is ready
+// http://learn.jquery.com/plugins/basic-plugin-creation/
+
+(function( $ ) {
+ 
+    $.fn.ifbreakpoint = function() {
+ 
+
 
  // Add some invisible elements with Bootstrap CSS visibile utility classes
-$( "body" ).append( "<div style='display:none;' class='viewport-check'><span class='d-block d-sm-inline'></span><span class='d-sm-block'></span><span class='d-md-block'></span><span class='d-lg-block'></span><span class='d-xl-block'></span></div>" );
+$( "body" ).append( "<div style='display:none;' class='breakpoint-check'><span class='xs d-block d-sm-inline'></span><span class='sm d-sm-block d-md-inline'></span><span class='md d-md-block d-lg-inline'></span><span class='lg d-lg-block d-xl-inline'></span><span class='xl d-xl-block'></span></div>" );
 
 // Checks if the span is set to display lock via CSS
 function checkIfBlock (target) {
@@ -12,13 +17,21 @@ function checkIfBlock (target) {
   
 
 
+var xs = checkIfBlock('.breakpoint-check .xs');
+var sm = checkIfBlock('.breakpoint-check .sm');
+var md = checkIfBlock('.breakpoint-check .md');
+var lg = checkIfBlock('.breakpoint-check .lg');
+var xl = checkIfBlock('.breakpoint-check .xl');
 function checkSize (){
   // Set some variables to use with the if checks below
-xs = checkIfBlock('.viewport-check .d-block');
-sm = checkIfBlock('.viewport-check .d-sm-block');
-md = checkIfBlock('.viewport-check .d-md-block');
-lg = checkIfBlock('.viewport-check .d-lg-block');
-xl = checkIfBlock('.viewport-check .d-xl-block');
+
+xs = checkIfBlock('.breakpoint-check .xs');
+sm = checkIfBlock('.breakpoint-check .sm');
+md = checkIfBlock('.breakpoint-check .md');
+lg = checkIfBlock('.breakpoint-check .lg');
+xl = checkIfBlock('.breakpoint-check .xl');
+
+console.clear();
 if( xs == true) {
 	console.log("xs - <576px");
 } 
@@ -38,7 +51,8 @@ if( lg == true) {
 if( xl == true) {
 	console.log("xl - ≥1200px");
 } 
-console.clear();
+
+
 
 
 
@@ -46,20 +60,38 @@ console.clear();
 // end check size
 
 
+checkSize();
 
 
 
 
-// Load detection script
-checkSize();    
+ 
+    };
+ 
+}( jQuery ));
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Reload demo on  window resize
 $( window ).resize( function(){
-	
 	checkSize();
 }); 
-  
-  
-// document ready  
-}); 
+
 
