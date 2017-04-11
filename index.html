@@ -76,9 +76,29 @@ Custom media queries
   
 </head>
 
-<body >
+<body class="text-center" >
 
-<h2></h2>
+<h1>IfBreakpoint.js</h1>
+<h2>
+  Bootstrap 4 Breakpoint JS Trigger
+</h2>
+<p>It also adds and updates a body class on window resize</p>
+<p>Add the ifbreakpoint.js after jQuery and then use in your custom scripts like the example below.</p>
+<textarea name="" id="" cols="60" rows="15">
+// update onload
+$("h2").text( breakpoint ); 
+
+  if ( xs == true ) { 
+    alert("mobile first");
+  }
+
+  // Update on window resize
+  $( window ).resize( function(){
+    $("h2").text( breakpoint ); 
+  }); 
+
+});
+</textarea>
 
   
   <script src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
@@ -86,15 +106,24 @@ Custom media queries
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
 
 
-<script src='if-breakpoint.js'></script>
+<script src='ifbreakpoint.js'></script>
 
     <script>
 
-    $(document).ready(function(){
+$(document).ready(function(){
+  
 
+// update onload
+$("h2").text( breakpoint ); 
 
-ifbreakpoint(); // Makes all the links green.
+  if ( xs == true ) { 
+    alert("mobile first");
+  }
 
+  // Update on window resize
+  $( window ).resize( function(){
+    $("h2").text( breakpoint ); 
+  }); 
 
 });
 

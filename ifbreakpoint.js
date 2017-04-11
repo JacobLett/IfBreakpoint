@@ -28,21 +28,21 @@ xl = checkIfBlock('.breakpoint-check .xl');
 // add the breakpoint to the console
 console.clear();
 if( xs == true) {
-	breakpoint = "xs";
-	console.log(breakpoint + " - <576px");
+	breakpoint = "xs - <576px";
+	console.log(breakpoint);
 	$("body").removeClass('xs sm md lg xl').addClass( "xs" );
 } 
 
 if( sm == true) {
-		breakpoint = "sm";
-	console.log(breakpoint + " - ≥576px");
+		breakpoint = "sm - ≥576px";
+	console.log(breakpoint);
 
 	$("body").removeClass('xs sm md lg xl').addClass( "sm" );
 } 
 
 if( md == true) {
-		breakpoint = "md";
-	console.log(breakpoint + " - ≥768px");
+		breakpoint = "md - ≥768px";
+	console.log(breakpoint);
 
 
 
@@ -50,8 +50,8 @@ if( md == true) {
 } 
 
 if( lg == true) {
-		breakpoint = "lg";
-	console.log(breakpoint + " - ≥992px");
+		breakpoint = "lg - ≥992px";
+	console.log(breakpoint);
 
 
 
@@ -59,8 +59,8 @@ if( lg == true) {
 } 
 
 if( xl == true) {
-		breakpoint = "xl";
-	console.log(breakpoint + " - ≥1200px");
+		breakpoint = "xl - ≥1200px";
+	console.log(breakpoint);
 
 
 
