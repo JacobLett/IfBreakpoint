@@ -36,34 +36,24 @@ if( xs == true) {
 if( sm == true) {
 		breakpoint = "sm - ≥576px";
 	console.log(breakpoint);
-
 	$("body").removeClass('xs sm md lg xl').addClass( "sm" );
 } 
 
 if( md == true) {
 		breakpoint = "md - ≥768px";
 	console.log(breakpoint);
-
-
-
 	$("body").removeClass('xs sm md lg xl').addClass( "md" );
 } 
 
 if( lg == true) {
 		breakpoint = "lg - ≥992px";
 	console.log(breakpoint);
-
-
-
 	$("body").removeClass('xs sm md lg xl').addClass( "lg" );
 } 
 
 if( xl == true) {
 		breakpoint = "xl - ≥1200px";
 	console.log(breakpoint);
-
-
-
 	$("body").removeClass('xs sm md lg xl').addClass( "xl" );
 } 
 
