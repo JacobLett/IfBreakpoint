@@ -71,9 +71,10 @@
       
 <h3>2. Then use it in your custom scripts</h3>
 <pre class="bg-faded">
-// update onload
-$("h2").text( breakpoint ); 
-
+$(document).ready(function(){
+  // update onload
+  $("h2").text( breakpoint ); 
+  
   if ( xs == true ) { 
     alert("mobile first");
   }
