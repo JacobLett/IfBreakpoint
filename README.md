@@ -10,8 +10,10 @@ Bootstrap 3
 
 ### Are you extra-small?
 `// update onload
-$("h2").text( breakpoint ); 
-
+$(document).ready(function(){
+  // update onload
+  $("h2").text( breakpoint ); 
+  
   if ( xs == true ) { 
     alert("mobile first");
   }
@@ -21,4 +23,4 @@ $("h2").text( breakpoint );
     $("h2").text( breakpoint ); 
   }); 
 
-});`
+});
