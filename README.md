@@ -9,7 +9,8 @@ Bootstrap 3
 
 
 ### Are you extra-small?
-`// update onload
+```
+// update onload
 $(document).ready(function(){
   // update onload
   $("h2").text( breakpoint ); 
@@ -24,4 +25,4 @@ $(document).ready(function(){
   }); 
 
 });
-`
+```
