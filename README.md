@@ -23,4 +23,4 @@ $(document).ready(function(){
     $("h2").text( breakpoint ); 
   }); 
 
-});
+});'
