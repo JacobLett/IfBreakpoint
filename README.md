@@ -2,10 +2,10 @@
 Detect Bootstrap 4 breakpoints to run conditional scripts and functions
 
 Bootstrap 4
-`<script src='https://cdn.rawgit.com/JacobLett/IfBreakpoint/6f216d75/if-b4-breakpoint.min.js'></script>`
+`<script src='https://cdn.rawgit.com/JacobLett/IfBreakpoint/e9fcd4fd/if-b4-breakpoint.min.js'></script>`
 
 Bootstrap 3
-`<script src='https://cdn.rawgit.com/JacobLett/IfBreakpoint/6f216d75/if-b3-breakpoint.min.js'></script>`
+`<script src='https://cdn.rawgit.com/JacobLett/IfBreakpoint/e9fcd4fd/if-b3-breakpoint.min.js'></script>`
 
 
 ### Are you extra-small?
